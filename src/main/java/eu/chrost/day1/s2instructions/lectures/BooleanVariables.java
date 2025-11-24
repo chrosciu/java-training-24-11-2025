@@ -1,4 +1,4 @@
-package eu.chrost.day1.s2instructions;
+package eu.chrost.day1.s2instructions.lectures;
 
 public class BooleanVariables {
     public static void main(String[] args) {
