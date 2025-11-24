@@ -1,4 +1,4 @@
-package eu.chrost;
+package eu.chrost.day1.s0hello;
 
 public class Main {
     public static void main(String[] args) {
