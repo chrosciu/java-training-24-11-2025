@@ -1,33 +1,45 @@
 package eu.chrost.day2.s3classes.task1.trainer;
 
-public class BankAccount {
+class BankAccount {
+
     private final String accountNumber;
     private double balance;
 
-    public BankAccount(String accountNumber, double initialBalance) {
+    public BankAccount(String accountNumber, double balance) {
         this.accountNumber = accountNumber;
-        this.balance = initialBalance;
+        this.balance = balance;
     }
 
     public BankAccount(String accountNumber) {
-        this(accountNumber, 0.0);
+        this.accountNumber = accountNumber;
+        this.balance = 0.0; //mozna bez this
     }
 
-    public BankAccount(){
+    public BankAccount() {
         this("0000", 0.0);
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
     }
 
     public double getBalance() {
         return balance;
     }
-    public String getAccountNumber() {
-        return accountNumber;
-    }
+
     public void print() {
-        System.out.println("Account Number: " + accountNumber + ", Balance: " + balance);
+        System.out.println("BankAccount{" + "accountNumber='" + accountNumber + '\'' + ", balance=" + balance + '}');
     }
 
-    public static void main(String[] args) {
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+        }
+    }
 
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        }
     }
 }
