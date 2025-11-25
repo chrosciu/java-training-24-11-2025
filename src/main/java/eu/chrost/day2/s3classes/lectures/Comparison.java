@@ -18,6 +18,14 @@ public class Comparison {
         p2.y = 4.5;
         System.out.println("p1 == p2 -> " + (p1 == p2));
 
+        //equals tez tu nie pomaga - domyslnie dziala tak samo jak ==
+        System.out.println("p1.equals(p2) -> " + (p1.equals(p2)));
+
+        //toString domyslnie zwraca nazwe klasy + @ + hashcode w systemie szesnastkowym
+        //nie nadaje sie to do niczego a juz na pewno do porownywania obiektow
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+
         //porowanie obiektow za pomoca == zwraca true tylko wtedy gdy oba odniesienia wskazuja na ten sam obiekt w pamieci
         Point p3 = p2;
         System.out.println("p2 == p3 -> " + (p2 == p3));

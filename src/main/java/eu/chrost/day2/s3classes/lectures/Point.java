@@ -1,5 +1,7 @@
 package eu.chrost.day2.s3classes.lectures;
 
+import java.util.Objects;
+
 public class Point {
     double x;
     double y;
