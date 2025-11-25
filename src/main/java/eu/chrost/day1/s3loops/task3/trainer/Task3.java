@@ -10,19 +10,26 @@ public class Task3 {
         String input = scanner.nextLine();
         int number = Integer.parseInt(input);
 
-        if (number > 0) {
-            int sum = 0;
-            int i = 1;
-
-            while (i < number) {
-                if (number % i == 0) {
-                    sum += i;
-                }
-                ++i;
-            }
-            System.out.println("Suma dzielników: " + sum);
-        } else {
+        if (number < 0) {
             System.out.println("Liczba musi byc wieksza od zera");
+            return;
         }
+
+        int sum = 0;
+        int i = 1;
+
+        while (i < number) {
+            if (number % i == 0) {
+                sum += i;
+            }
+            ++i;
+        }
+        System.out.println("Suma dzielników: " + sum);
+        if (sum == number) {
+            System.out.println("Liczba jest doskonała.");
+        } else {
+            System.out.println("Liczba nie jest doskonała.");
+        }
+
     }
 }
