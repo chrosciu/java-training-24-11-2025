@@ -1,0 +1,9 @@
+1. W pakiecie eu.chrost.company utwórz abstrakcyjną klasę Employee:
+- Dodaj pola String name, double salary.
+- Dodaj abstrakcyjną metodę void work().
+2. Utwórz interfejs Payable z metodą double calculateBonus().
+3. Utwórz klasy Developer i Manager, które dziedziczą po Employee i implementują interfejs Payable:
+- Dla Developer, metoda work() powinna wypisywać "Coding...".
+- Dla Manager, metoda work() powinna wypisywać "Managing team...".
+- Bonus dla dewelopera to 10% pensji, a dla menedżera – 20%.
+4. W metodzie main utwórz listę pracowników, wywołaj na nich metody work() oraz oblicz bonusy.
