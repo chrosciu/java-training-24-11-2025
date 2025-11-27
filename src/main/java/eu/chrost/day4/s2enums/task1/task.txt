@@ -1,0 +1,4 @@
+Utworz enum Color z wartosciami: RED, GREEN, BLUE, YELLOW, BLACK, WHITE.
+W enumie utworz metode boolean isMonochromatic(), ktora zwraca true dla kolorow czarnego i bialego, a false dla pozostalych.
+Utworz metode main w klasie Main, w ktorej przetestujesz metode isMonochromatic() dla kazdego koloru z enuma Color.
+Dodatkowo przetestuj metode czy mozna zbudowac kolor majac jego podana nazwe oraz co sie stanie jesli nazwa nie odpowiada zadnemu kolorowi z enuma.
