@@ -31,11 +31,15 @@ public class Main {
         //ExtraNameable hiddenDogAsExtraNameable = dog;
 
         Dog anotherDog = new Dog("Max", 5);
-        Dog[] dogs = {anotherDog, dog};
+
+        Dog thirdDog = new Dog("Charlie", 2);
+
+        Dog[] dogs = {anotherDog, dog, thirdDog};
 
         System.out.println(Arrays.toString(dogs));
 
-        Arrays.sort(dogs);
+        //Arrays.sort(dogs);
+        Arrays.sort(dogs, new NameableComparator().reversed());
 
         System.out.println(Arrays.toString(dogs));
 
