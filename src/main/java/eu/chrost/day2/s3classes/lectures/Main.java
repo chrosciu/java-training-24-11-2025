@@ -32,5 +32,9 @@ public class Main {
         System.out.println(ip1.getX());
         System.out.println(ip1.getY());
         ip1.print();
+        System.out.println(ip1);
+
+        ImmutablePoint ip2 = new ImmutablePoint(2.0, 4.0);
+        System.out.println(ip1.equals(ip2));
     }
 }

@@ -4,8 +4,10 @@ public class Main {
     public static void main(String[] args) throws InvalidAgeException {
         try {
             Employee employee = new Employee("Marcin", 17);
-        } catch (InvalidAgeException e) {
-            throw new BusinessAgeException(e);
+        } catch (Exception e) {
+            if (e instanceof InvalidAgeException e1) {
+                throw new BusinessAgeException(e1);
+            }
         }
     }
 }
