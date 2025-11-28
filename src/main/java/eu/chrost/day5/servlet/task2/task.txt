@@ -1,7 +1,3 @@
-1. Utworz klase lub rekord User z polami: String firstName, String lastName
-2. Utworz klase UserStorage z metoda: public static List<User> getAll()
-Metoda ta powinna zwracac kilku uzytkownikow (np. 3) w formie listy.
-3. Utworz klase UserServlet, ktora powinna po uderzeniu HTTP pod adres /users zwracac liste uzytkownikow jako odpowiedz HTTP.
-Klasa ta powinna wykorzystywac metode UserStorage.getAll() do pobrania listy uzytkownikow.
-Format moze byc dowolny (zwykly tekst, JSON itp.)
-4. Uruchomic serwer i sprawdzic w przegladarce czy endpoint dziala poprawnie.
+1. Za pomocą skryptu users.sql załóż tabelę users w bazie danych oraz dodaj do niej kilka przykładowych użytkowników
+2. Przerób UserStorage tak aby użytkownicy byli pobierani z bazy danych a nie z pamięci
+3. Sprawdź działanie aplikacji poprzez uruchomienie serwera i wejście na endpoint /users
