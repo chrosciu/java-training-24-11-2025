@@ -1,4 +1,4 @@
-package eu.chrost.day5.lectures;
+package eu.chrost.day5.servlet.lectures;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
